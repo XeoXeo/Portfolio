@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    var ctx = document.getElementById("skillsChart");
+$.fn.generateSkillsChart = function() {
+	var ctx = document.getElementById("skillsChart");
     var radarChart = new Chart(ctx, {
         type: 'horizontalBar',
         responsive: true,
@@ -42,4 +42,9 @@ $(document).ready(function() {
             }
         }
     });
+};
+
+$(document).ready(function() {
+	// Generate skills chart if on about page
+	if (window.location.href.indexOf("about") > -1) $.fn.generateSkillsChart();
 });
