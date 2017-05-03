@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var ctx = document.getElementById("mySkills");
+    var ctx = document.getElementById("skillsChart");
     var radarChart = new Chart(ctx, {
         type: 'horizontalBar',
         responsive: true,
@@ -13,7 +13,7 @@ $(document).ready(function() {
                     borderWidth: 1,
                     hoverBackgroundColor: "rgba(255,99,132,0.4)",
                     hoverBorderColor: "rgba(255,99,132,1)",
-                    data: [55, 65, 80, 50]
+                    data: [70, 80, 95, 65]
                 }
             ]
         },
@@ -30,10 +30,14 @@ $(document).ready(function() {
                         },
                         gridLines: {
                             display: false
-                        }
+                        },
+						display: false
                 }],
                 yAxes: [{
                         stacked: true,
+						gridLines: {
+							display: false
+						}
                 }]
             }
         }
