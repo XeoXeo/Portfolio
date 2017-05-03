@@ -61,10 +61,19 @@ section {
 		justify-content: center;
 	}
 
-	&.skills-chart {
+	&.skills {
 		padding-top: 0;
+		height: 500px;
 
-		align-self: center;
+		justify-content: center;
+
+		.skills-chart {
+			width: 75% !important;
+
+			#skillsChart {
+				height: 450px;
+			}
+		}
 	}
 
     h3.title {
@@ -129,6 +138,7 @@ header {
 
 	&.alt-header {
 		position: relative;
+
 		color: rgb(62, 62, 62);
 	}
 

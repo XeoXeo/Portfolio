@@ -18,6 +18,7 @@ $.fn.generateSkillsChart = function() {
             ]
         },
         options: {
+			maintainAspectRatio: false,
             legend: {
                 display: false
             },
